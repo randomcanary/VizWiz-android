@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:orientation="vertical">
+    <RelativeLayout android:layout_height="wrap_content" android:id="@+id/relativeLayout1" android:layout_width="match_parent"></RelativeLayout>
+    <EditText android:text="" android:id="@+id/editText1" android:layout_height="wrap_content" android:layout_width="match_parent" android:inputType="number"></EditText>
+    <TextView android:text="Enter in polling interval (in secs)" android:id="@+id/textView1" android:layout_height="wrap_content" android:layout_width="match_parent"></TextView>
+    <Button android:text="Start" android:layout_height="wrap_content" android:id="@+id/button1" android:layout_width="match_parent"></Button>
+</LinearLayout>

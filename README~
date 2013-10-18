@@ -1,0 +1,26 @@
+Author: Preet Singh | www.randomcanary.com | preet @ randomcanary . com
+Group: ROC HCI (http://www.cs.rochester.edu/hci)
+Project Name: VizWiz Android
+Project version: Beta 1.0
+Project description: This is VizWiz Android Beta (www.vizwiz.org), an assistive app for the visually impaired. Like the original iPhone VizWiz, it takes a picture (say, a cereal box), records a question ("What brand of cereal is this?" and receives a collection of answers ("Some kind of cheerios", "HoneyNut Cheerios"). 
+
+Note1: This version works fine, as of June 2 2012. 
+Note2: This readme is written for developers who want to take this code and run with it. 
+=============================================================================================================================
+Getting started with VizWiz Android Beta 1.0: 
+=============================================================================================================================
+Reqs: An Android device. Root perms aren't necessary. A TTS (Text-to-speech) engine should be installed on your Android device: Popular (and usually pre-installed) engines are TalkBack and Pico. This .apk has been tested successfully on Android 2.3. 
+
+(1) Install the .apk on your phone (bin/VizWiz_Jun2_12.apk) : The easiest way is to download the file into your phone and double-tap it (You should have developer mode / unknown sources enabled. The setting changes are slightly different for different versions of Android. Google "Installing .apk on android ver.___" if you get stuck). 
+
+(2) What it does: Clicks a picture, records a question, sends it off to the VizWiz engine, and then checks for a reply for a finite amount of time (and the reads the received answers to you in turn, when you press "Next Answer"). You can press "Check reply" to check again (usually for more replies). The UI's got relative positioning of menu items (which means it springs up wherever you touch the screen) with audio cues. 
+
+(3) A good starting point in understanding the code is SendMenuShell.java and SendMenuView.java 
+ 
+Recommended features to be implemented: 
+(A) Polling and answer retrieval continues as long as you're on the screen.
+(B) Also, you can check history (each query to the VW engine gets you an ID: You can save the the IDs to a local device text file (basic code for that exists in the src files). 
+
+Questions can be emailed to me. 
+
+Acknowledgements: One of TV Raman's projects (EyesFree or Marvin, I think) was a great starting point. If you're interested in assistive apps for the visually impaired, you should check his stuff out. 
